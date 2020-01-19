@@ -1,4 +1,4 @@
-## EECS3221: MiniProject1-Description
+## EECS3221: MiniProject1 Description and Evaluation Criteria
 **Out:** January 20, 2020    
 **Due:** February 3, 2020 
 
@@ -110,7 +110,7 @@ process it creates. Implementing pipe functionality will also require using the 
 previous section. Finally, although several commands can be chained together using multiple pipes, you can assume 
 that commands will contain only one pipe character and will not be combined with any redirection operators.
 
-## Evaluation Criteria
+## Evaluation
 You need to submit a zip file with your student id as the name (i.e., `student_id.zip`) in the Moodle which includes 
 the C source code to your shell, and a Makefile that compiles the shell. The TA will use your Makefile to compile and 
 run your program in the course Virtual Machine (VM). [Here is a quick tutorial on makefile](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/), in case you are not familiar. The TAs then grade your project according to the 
