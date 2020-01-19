@@ -127,4 +127,4 @@ not familiar. The TAs then grade your project according to the following table:
 | History feature                                    | 2 |
 | Handle redirection                                 | 2 |
 | Handle pipe                                        | 2 |
-| **sum**                                            | **10** | 
+| **Sum**                                            | **10** | 
