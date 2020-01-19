@@ -42,16 +42,18 @@ as `should_run` equals 1; when the user enters exit at the prompt, your program 
 int main(void) {
     char *args[MAX LINE/2 + 1]; /* command line arguments */ 
     int should_run = 1; /* flag to determine when to exit program */
-    while (should_run) 
-        { 
+    
+    while (should_run){ 
         printf("mysh:~$ "); 
         fflush(stdout);
-}
-/*** After reading user input, the steps are: * 
- * (1) fork a child process using fork() * 
- * (2) the child process will invoke execvp() * 
- * (3) parent will invoke wait() unless command included & */
-} 
+        
+        /** After reading user input, the steps are:  
+         * (1) fork a child process using fork()  
+         * (2) the child process will invoke execvp()  
+         * (3) parent will invoke wait() unless command included & 
+         */
+    }
+
 return 0;
 }
 ```
