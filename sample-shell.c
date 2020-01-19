@@ -1,8 +1,7 @@
 /**
- * Simple shell interface program.
- *
- * Operating System Concepts - Tenth Edition
- * Copyright John Wiley & Sons - 2018
+ * Simple shell interface starter kit program.
+ * Operating System Concepts
+ * Mini Project1
  */
 
 #include <stdio.h>
@@ -16,7 +15,7 @@ int main(void)
     int should_run = 1;
 
     while (should_run){
-        printf("osh>");
+        printf("mysh:~$ ");
         fflush(stdout);
 
         /**
