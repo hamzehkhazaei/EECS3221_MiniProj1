@@ -32,7 +32,7 @@ call, and the user’s command is executed using one of the system calls in the 
 3.3.1). A C program that provides the general operations of a command-line shell
 is supplied in the code block bellow (Figure 3.36 in the book). The `main()` function presents the prompt `mysh:~$ ` and 
 outlines the steps to be taken after input from the user has been read. The `main()` function continually loops as long
-as `should_run` equals 1; when the user enters exit at the prompt, your program will set `should_run` to 0 and terminate.
+as `should_run` equals 1; when the user enters `exit` at the prompt, your program will set `should_run` to 0 and terminate.
 
 ```c
 #include <stdio.h> 
