@@ -120,7 +120,7 @@ use your Makefile to compile and run your program in the course Virtual Machine 
 [Here is a quick tutorial on makefile](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/), in case you are 
 not familiar. The TAs then grade your project according to the following table:
 
-| Item        | Grade           |
+| Item        | Mark           |
 | ------------- |:-------------:|
 | Accurate Makefile and no error in compilation      | 2 |
 | Simple shell commands                              | 2 |
