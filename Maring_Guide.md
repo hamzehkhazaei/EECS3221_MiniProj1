@@ -1,4 +1,7 @@
 ## Marking Guide for Mini Project 1
+**Out:** January 20, 2020    
+**Due:** February 3, 2020
+
 This document describes the marking scheme for Mini Project 1.
 
 1. Accurate makefile and no error in compilation 
@@ -19,4 +22,5 @@ This document describes the marking scheme for Mini Project 1.
     (i.e., sorted) in the screen.
     
 5. Communication via pipe
-    * For this part, the TA will execute `ls | sort` command; same result as part 4 should be printed in the screen.    
+    * For this part, the TA will execute `ls | sort` or `ps -ef | grep systemd` command; expected results should be printed
+    out in the screen.     
