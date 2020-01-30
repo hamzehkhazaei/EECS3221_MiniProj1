@@ -5,7 +5,7 @@
 This document describes the marking scheme for Mini Project 1.
 
 1. Accurate makefile and no error in compilation (2 marks)
-    * The TA will use `mysh:~$ make` command to compile and make the project; if no errors reported and shell prompt 
+    * The TA will use `make` command to compile and make the project; if no errors reported and shell prompt 
     shows up properly you will get the 2 marks for this part.
 
 2. Simple shell commands (2 marks)
