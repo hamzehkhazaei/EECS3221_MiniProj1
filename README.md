@@ -124,25 +124,25 @@ The TA will use your Makefile to compile and run your program in the course Virt
 [Here is a quick tutorial on makefile](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/), in case you are 
 not familiar. The TAs then grade your project according to the following:
 
-1. Accurate makefile and no error in compilation (2 marks)
+1. Accurate makefile and no error in compilation (2 points)
     * In OSC VM, the TA will use `make` command to compile and make the project; if no errors reported and shell prompt
       shows up properly you will get the 2 marks for this part.
 
-2. Simple shell commands (3 marks)
+2. Simple shell commands (3 points)
     * At this step, the TA may run any simple shell command in your shell. It could be w/wo parameters and **is including but not
       limited to** `ls -la`, `cd /etc/bin/`, `pwd`, `exit`, `top &` etc. When running `top &`, the TA will check if
       a top process is running in the background. The TA will use the same set of commands for all students.
 
-3. History feature (2 marks)
+3. History feature (2 points)
     * Here the TA uses `!!` to run the last command. If there is no last command (i.e., right at the beginning),
       your shell should provide a proper error message.
 
-4. Redirection input and output (4 marks)
+4. Redirection input and output (4 points)
     * To test this, the TA issues `ls > out.txt` command. the `out.txt` file should be created in the current
       directory. Then, `sort < out.txt` will be executed; as a result, a sorted list of files/folders should be printed
       in the screen.
 
-5. Communication via pipe (4 marks)
+5. Communication via pipe (4 points)
     * For this part, the TA will execute `ls | sort` or/and `ps -ef | grep systemd` command; expected results should be printed
       out in the screen.
 
