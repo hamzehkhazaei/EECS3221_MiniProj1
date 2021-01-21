@@ -1,6 +1,6 @@
 ## Description and Evaluation Criteria of the Project
-**Out:** January 20, 2020    
-**Due:** February 3, 2020 
+**Out:** January 23, 2021 @ 9:00pm    
+**Due:** February 7, 2020 @ 9:00pm
 
 ### Project Goals:
 1. To dust off your C programming skills.
@@ -114,17 +114,58 @@ process it creates. Implementing pipe functionality will also require using the 
 previous section. Finally, although several commands can be chained together using multiple pipes, you can assume 
 that commands will contain only one pipe character and will not be combined with any redirection operators.
 
-### Evaluation 
-You need to submit the C source code to your shell, and a Makefile that compiles the shell in the Moodle. The TA will 
-use your Makefile to compile and run your program in the course Virtual Machine (VM). 
-[Here is a quick tutorial on makefile](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/), in case you are 
-not familiar. The TAs then grade your project according to the following table:
+### What to submit?
+You need to submit one zip file named `project1.zip` including your C source files along with the `makefile`.
 
-| Item        | Mark           |
-| ------------- |:-------------:|
-| Accurate Makefile and no error in compilation      | 2 |
-| Simple shell commands                              | 2 |
-| History feature                                    | 2 |
-| Handle redirection                                 | 2 |
-| Handle pipe                                        | 2 |
-| **Sum**                                            | **10** |
+Please **do not** include any other files such as object files `*.o` in your zip file.  
+
+### Evaluation 
+The TA will use your Makefile to compile and run your program in the course Virtual Machine (VM). 
+[Here is a quick tutorial on makefile](http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/), in case you are 
+not familiar. The TAs then grade your project according to the following:
+
+1. Accurate makefile and no error in compilation (2 marks)
+    * In OSC VM, the TA will use `make` command to compile and make the project; if no errors reported and shell prompt
+      shows up properly you will get the 2 marks for this part.
+
+2. Simple shell commands (3 marks)
+    * At this step, the TA may run any simple shell command in your shell. It could be w/wo parameters and **is including but not
+      limited to** `ls -la`, `cd /etc/bin/`, `pwd`, `exit`, `top &` etc. When running `top &`, the TA will check if
+      a top process is running in the background. The TA will use the same set of commands for all students.
+
+3. History feature (2 marks)
+    * Here the TA uses `!!` to run the last command. If there is no last command (i.e., right at the beginning),
+      your shell should provide a proper error message.
+
+4. Redirection input and output (4 marks)
+    * To test this, the TA issues `ls > out.txt` command. the `out.txt` file should be created in the current
+      directory. Then, `sort < out.txt` will be executed; as a result, a sorted list of files/folders should be printed
+      in the screen.d
+
+5. Communication via pipe (4 marks)
+    * For this part, the TA will execute `ls | sort` or/and `ps -ef | grep systemd` command; expected results should be printed
+      out in the screen.
+
+
+
+
+
+
+
+
+
+[comment]: <> (| Item        | Mark           |)
+
+[comment]: <> (| ------------- |:-------------:|)
+
+[comment]: <> (| Accurate Makefile and no error in compilation      | 2 |)
+
+[comment]: <> (| Simple shell commands                              | 2 |)
+
+[comment]: <> (| History feature                                    | 2 |)
+
+[comment]: <> (| Handle redirection                                 | 2 |)
+
+[comment]: <> (| Handle pipe                                        | 2 |)
+
+[comment]: <> (| **Sum**                                            | **10** |)
