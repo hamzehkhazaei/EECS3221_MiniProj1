@@ -1,7 +1,7 @@
 /**
  * Simple shell interface starter kit program.
  * Operating System Concepts
- * Mini Project1
+ * Project 1
  */
 
 #include <stdio.h>
@@ -24,6 +24,7 @@ int main(void)
           * (2) the child process will invoke execvp()
           * (3) if command includes &, parent and child will run concurrently
           */
+          should_run = 0;
     }
 
     return 0;
