@@ -140,7 +140,7 @@ not familiar. The TAs then grade your project according to the following:
 4. Redirection input and output (4 marks)
     * To test this, the TA issues `ls > out.txt` command. the `out.txt` file should be created in the current
       directory. Then, `sort < out.txt` will be executed; as a result, a sorted list of files/folders should be printed
-      in the screen.d
+      in the screen.
 
 5. Communication via pipe (4 marks)
     * For this part, the TA will execute `ls | sort` or/and `ps -ef | grep systemd` command; expected results should be printed
