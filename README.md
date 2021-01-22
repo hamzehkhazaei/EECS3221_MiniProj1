@@ -1,6 +1,6 @@
 ## Description and Evaluation Criteria
-**Out:** January 23, 2021 @ 9:00am    
-**Due:** February 7, 2020 @ 9:00pm
+**Out:** January 23, 2021 @ 9:00 am    
+**Due:** February 7, 2020 @ 9:00 pm
 
 ### Project Goals:
 1. To dust off your C programming skills.
@@ -115,7 +115,7 @@ previous section. Finally, although several commands can be chained together usi
 that commands will contain only one pipe character and will not be combined with any redirection operators.
 
 ### What to submit?
-You need to submit one zip file named `project1.zip` including your C source files along with the `makefile`.
+You need to submit one zip file named `project1.zip` including your C source files along with the `Makefile`.
 
 Please **do not** include any other files such as object files `*.o` in your zip file.  
 
