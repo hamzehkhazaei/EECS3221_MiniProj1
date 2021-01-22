@@ -1,4 +1,4 @@
-## Description and Evaluation Criteria of the Project
+## Description and Evaluation Criteria
 **Out:** January 23, 2021 @ 9:00pm    
 **Due:** February 7, 2020 @ 9:00pm
 
