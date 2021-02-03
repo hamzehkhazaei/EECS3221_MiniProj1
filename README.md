@@ -115,7 +115,7 @@ previous section. Finally, although several commands can be chained together usi
 that commands will contain only one pipe character and will not be combined with any redirection operators.
 
 ### What to submit?
-You need to submit one zip file named `project1.zip` including your C source files along with the `Makefile`.
+You need to submit one zip file named `project1.zip` including your C source file(s) along with the `Makefile`.  
 
 Please **do not** include any other files such as object files `*.o` in your zip file.  
 
@@ -125,22 +125,22 @@ The TA will use your Makefile to compile and run your program in the course Virt
 not familiar. The TAs then grade your project according to the following:
 
 1. Accurate makefile and no error in compilation (2 points)
-    * In OSC VM, the TA will use `make` command to compile and make the project; if no errors reported and shell prompt
-      shows up properly you will get the 2 marks for this part.
+    * In OSC VM, the TA will use `make` command to compile the project; if no errors reported during the compilation and shell
+      shows up properly by running your executable, you will get the 2 points for this part.
 
 2. Simple shell commands (3 points)
     * At this step, the TA may run any simple shell command in your shell. It could be w/wo parameters and **is including but not
-      limited to** `ls -la`, `cd /etc/bin/`, `pwd`, `exit`, `top &` etc. When running `top &`, the TA will check if
-      a top process is running in the background. The TA will use the same set of commands for all students.
+      limited to** `ls -la`, `cd /etc/bin/`, `pwd`, `exit`, etc. [2 points]
+    * The TA also runs the `top &` command that should create a top process in the backgrond. Here your shell should creat the process and returns immediately to the prompt to accpet a new command. The TA will check if the top process is running in the background properly and the shell can accept new commands. [1 point]
 
 3. History feature (2 points)
     * Here the TA uses `!!` to run the last command. If there is no last command (i.e., right at the beginning),
-      your shell should provide a proper error message.
+      your shell should provide a proper error message. It does not matter if the last command was a valid or not; the `!!` should run that last command again.
+       <!-- Next Year I should explicitly say that they need to echo the last command as well.  -->
 
 4. Redirection input and output (4 points)
-    * To test this, the TA issues `ls > out.txt` command. the `out.txt` file should be created in the current
-      directory. Then, `sort < out.txt` will be executed; as a result, a sorted list of files/folders should be printed
-      in the screen.
+    * To test output redirect, the TA issues `ls > out.txt` command. The `out.txt` file should be created in the current directory. [2 points] 
+    * Then for checking input redirect, `sort < out.txt` will be executed; as a result, a sorted list of files/folders should be printed in the screen. [2 points]
 
 5. Communication via pipe (4 points)
     * For this part, the TA will execute `ls | sort` or/and `ps -ef | grep systemd` command; expected results should be printed
