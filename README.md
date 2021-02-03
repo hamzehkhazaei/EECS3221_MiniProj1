@@ -135,7 +135,7 @@ not familiar. The TAs then grade your project according to the following:
 
 3. History feature (2 points)
     * Here the TA uses `!!` to run the last command. If there is no last command (i.e., right at the beginning),
-      your shell should provide a proper error message. It does not matter if the last command was a valid or not; the `!!` should run that last command again.
+      your shell should provide a proper error message. It does not matter if the last command was valid or not; the `!!` should run that last command again.
        <!-- Next Year I should explicitly say that they need to echo the last command as well.  -->
 
 4. Redirection input and output (4 points)
